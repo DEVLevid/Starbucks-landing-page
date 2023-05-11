@@ -7,10 +7,6 @@
     font-family: 'Inter', sans-serif;
 }
 
-html{
-    width: 100%;
-}
-
 section{
     position: relative;
     width: 100%;
@@ -135,7 +131,7 @@ header ul li a{
 .social{
     position: absolute;
     top: 50%;
-    right: 2px;
+    right: 30px;
     transform: translateY(-50%);
     display: flex;
     justify-content: center;
