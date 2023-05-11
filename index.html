@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <div><a href="#"><img src="images/logo.png" alt="Starbucks"></a></div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <div class="text-box">
+                <h2>It's not just coffee <br> It's <span>Starbucks</span></h2>
+                <p>Starbucks is an American multinational company, with the largest chain of coffee shops in the world,
+                    which currently has coffee shops all over the world. It has its headquarters in the city of Seattle,
+                    state of Washington.</p>
+                <a href="#">LEARN MORE</a>
+            </div>
+            <div class="coffee">
+                <a href="#"><img src="images/img1.png" class="starbucks" alt="coffee"></a>
+            </div>
+            <ul class="thumb">
+                <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeCircleColor('#017143')" alt="#"></li>
+                <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png');changeCircleColor('#eb7495')" alt="#"></li>
+                <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeCircleColor('#d752b1')" alt="#"></li>
+            </ul>
+            <ul class="social">
+                <li><a href="#"><img src="images/facebook.png" alt="#"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="#"></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt="#"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
