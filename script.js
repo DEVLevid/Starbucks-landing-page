@@ -22,3 +22,5 @@ coffee2.addEventListener("click", function () {
 coffee3.addEventListener("click", function () {
     circle.style.background = "#d752b1";
 });
+
+

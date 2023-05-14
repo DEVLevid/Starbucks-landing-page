@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
-section{
+section {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -18,7 +18,7 @@ section{
     background: #fff;
 }
 
-header{
+header {
     position: absolute;
     left: 0;
     top: 0;
@@ -29,21 +29,21 @@ header{
     align-items: center;
 }
 
-header .logo{
+header .logo {
     position: relative;
     max-width: 80px;
 }
 
-header ul{
+header ul {
     position: relative;
     display: flex;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-header ul li a{
+header ul li a {
     display: inline-block;
     color: #333;
     font-weight: 400;
@@ -51,7 +51,7 @@ header ul li a{
     text-decoration: none;
 }
 
-.content{
+.content {
     position: relative;
     width: 100%;
     display: flex;
@@ -59,25 +59,25 @@ header ul li a{
     justify-content: space-between;
 }
 
-.content .text-box{
+.content .text-box {
     position: relative;
     max-width: 600px;
 }
 
-.content .text-box h2{
+.content .text-box h2 {
     color: #333;
     font-size: 4em;
     line-height: 1.4em;
     font-weight: 500;
 }
 
-.content .text-box h2 span{
+.content .text-box h2 span {
     color: #017143;
     font-size: 1.2em;
     font-weight: 900;
 }
 
-.content .text-box a{
+.content .text-box a {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
@@ -89,7 +89,7 @@ header ul li a{
     text-decoration: none;
 }
 
-.content .coffee{
+.content .coffee {
     width: 600px;
     display: flex;
     justify-content: flex-end;
@@ -97,11 +97,11 @@ header ul li a{
     margin-top: 60px;
 }
 
-.content .coffee img{
+.content .coffee img {
     max-width: 340px;
 }
 
-.thumb{
+.thumb {
     position: absolute;
     left: 50%;
     bottom: 20px;
@@ -109,26 +109,26 @@ header ul li a{
     display: flex;
 }
 
-.thumb li{
+.thumb li {
     list-style: none;
     margin: 0 20px;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.thumb li:hover{
-    transform:translateY(-15px) ;
+.thumb li:hover {
+    transform: translateY(-15px);
 }
 
-.thumb li{
+.thumb li {
     max-width: 60px;
 }
 
-.thumb li img{
+.thumb li img {
     max-width: 60px;
 }
 
-.social{
+.social {
     position: absolute;
     top: 50%;
     right: 30px;
@@ -139,18 +139,18 @@ header ul li a{
     flex-direction: column;
 }
 
-.social li{
+.social li {
     list-style: none;
 }
 
-.social li a{
+.social li a {
     display: inline-block;
     margin: 5px 0;
     transform: scale(0.6);
     filter: invert(1);
 }
 
-.circle{
+.circle {
     position: absolute;
     top: 0;
     left: 0;
@@ -158,4 +158,92 @@ header ul li a{
     height: 100%;
     background: #017143;
     clip-path: circle(600px at right 800px);
+}
+
+@media (max-width:991px) {
+    header {
+        padding: 20px;
+    }
+
+    header .logo {
+        max-width: 60px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .nav{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(images/menu-regular-24.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .content .text-box h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    .content .text-box {
+        max-width: 100%;
+    }
+
+    .content .coffee {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .content .coffee img{
+        max-width: 250px;
+    }
+
+    .thumb-section{
+        padding-top: 4rem;
+    }
+
+    .thumb{
+        position: absolute;
+        padding-top: 2rem;
+        left: 50%;
+        bottom: 0px;
+        transform: translateX(-50%);
+        display: flex;
+    }
+
+    .thumb li img{
+        max-width: 50px;
+    }
+
+    .circle {
+        clip-path: circle(400px at center bottom);
+    }
+
+    .social {
+        background-color: #017143;
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%);
+    }
+
+    .social .thumb {
+        padding: 2rem;
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        transform: translateX(-50%);
+    }
 }
