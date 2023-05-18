@@ -1,7 +1,9 @@
 let coffee1 = document.querySelector('.thumb1');
 let coffee2 = document.querySelector('.thumb2');
 let coffee3 = document.querySelector('.thumb3');
+let navigationStats = false;
 
+const navigation = document.getElementById('navigation');
 const circle = document.querySelector('.circle');
 
 coffee1.addEventListener("click", function () {
@@ -23,5 +25,15 @@ coffee2.addEventListener("click", function () {
 coffee3.addEventListener("click", function () {
     circle.style.background = "#d752b1";
 });
+
+navigation.addEventListener("click", function (){
+    navigationStats = !navigationStats
+    if(navigationStats){
+        navigation.style.backgroundImage ="url('images/x-regular-24.png')";
+    }else{
+        navigation.style.backgroundImage ="url('images/menu-regular-24.png')";
+    }
+});
+
 
 

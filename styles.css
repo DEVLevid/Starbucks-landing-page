@@ -177,11 +177,20 @@ header ul li a {
         position: relative;
         width: 30px;
         height: 30px;
-        background: url(images/menu-regular-24.png);
+        background-image: url(images/menu-regular-24.png);
         background-size: 30px;
         background-position: center;
         background-repeat: no-repeat;
         cursor: pointer;
+    }
+
+    .showMenu{
+        position: relative;
+        max-width: 200px;
+        top: 50%;
+        background-color: white;
+        display: flex;
+        align-items: center;
     }
 
     section {
@@ -219,7 +228,7 @@ header ul li a {
         position: absolute;
         padding-top: 2rem;
         left: 50%;
-        bottom: 0px;
+        bottom: 0;
         transform: translateX(-50%);
         display: flex;
     }
@@ -235,7 +244,7 @@ header ul li a {
     .social {
         background-color: #017143;
         top: 50%;
-        right: 0px;
+        right: 0;
         transform: translateY(-50%);
     }
 
@@ -243,7 +252,7 @@ header ul li a {
         padding: 2rem;
         position: absolute;
         left: 50%;
-        bottom: 0px;
+        bottom: 0;
         transform: translateX(-50%);
     }
 }
