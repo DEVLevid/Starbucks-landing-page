@@ -160,6 +160,12 @@ header ul li a {
     clip-path: circle(600px at right 800px);
 }
 
+.showMenu{
+    display: none;
+}
+
+
+
 @media (max-width:991px) {
     header {
         padding: 20px;
@@ -182,15 +188,37 @@ header ul li a {
         background-position: center;
         background-repeat: no-repeat;
         cursor: pointer;
+        float: right;
+        z-index: 2000;
     }
 
     .showMenu{
-        position: relative;
-        max-width: 200px;
-        right: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
         background-color: white;
-        display: flex;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        flex-direction: column;
+        display: flex; //
         align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        z-index: -1;
+        opacity: 0;
+        transition: 0.5s linear;
+    }
+
+    .showMenuContainer li{
+        padding: 1rem;
+        list-style: none;
+    }
+
+    .showMenuContainer li a {
+        display: inline-block;
+        color: #333333;
+        text-decoration: none;
     }
 
     section {
