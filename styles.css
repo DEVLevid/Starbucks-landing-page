@@ -201,7 +201,7 @@ header ul li a {
         background-color: white;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         flex-direction: column;
-        display: flex; //
+        display: flex; 
         align-items: center;
         justify-content: center;
         gap: 2rem;

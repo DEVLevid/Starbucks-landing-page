@@ -39,7 +39,3 @@ navigation.addEventListener("click", function (){
         showMenu.style.opacity = "0";
     }
 });
-
-
-
-
